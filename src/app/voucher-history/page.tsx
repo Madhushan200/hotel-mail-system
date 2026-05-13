@@ -82,7 +82,7 @@ export default function VoucherHistoryPage() {
     doc.text(
       settings?.voucher_footer_note || "",
       14,
-      doc.lastAutoTable.finalY + 20
+      (doc as any).lastAutoTable.finalY + 20
     );
 
     doc.save(`${voucher.tour_number}.pdf`);
