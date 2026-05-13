@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3f4f6;
+  --foreground: #111827;
 }
 
 @theme inline {
@@ -12,15 +12,71 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Disable automatic dark mode */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fix inputs */
+input,
+select,
+textarea {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+/* Fix tables */
+table,
+th,
+td {
+  color: #111827;
+}
+
+/* Fix headings and text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+strong {
+  color: #111827;
+}
+
+/* Fix buttons */
+button {
+  color: white;
+}
+* {
+  color: #111827 !important;
+}
+
+body {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+main,
+div,
+section,
+article {
+  color: #111827 !important;
+}
+
+input,
+select,
+textarea {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+button {
+  background: #000000 !important;
+  color: #ffffff !important;
 }
